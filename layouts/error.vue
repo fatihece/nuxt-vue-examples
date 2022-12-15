@@ -1,43 +1,71 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Home page </NuxtLink>
-  </v-app>
+  <div>
+    <v-card v-show="error.statusCode === 404">
+      <v-card-title class="d-flex justify-center align-center mt-8 text-h4">
+        Page Not Found
+      </v-card-title>
+      <v-card-text class="d-flex justify-center align-center mt-8">
+        <v-btn to="/" color="success" outlined aria-label="Go Home Button">
+          Go Home
+        </v-btn>
+      </v-card-text>
+      <v-card-text class="d-flex justify-center align-center pa-5 text-caption">
+        <nuxt-img
+          format="webp"
+          src="images/error/404.jpg"
+          width="400px"
+          alt="404 Error"
+        ></nuxt-img>
+      </v-card-text>
+    </v-card>
+    <v-card v-show="error.statusCode === 401">
+      <v-card-title class="d-flex justify-center align-center mt-8">
+        Unauthorized page</v-card-title
+      >
+      <v-card-text class="d-flex justify-center align-center mt-8">
+        <v-btn to="/" color="success" outlined aria-label="Go Home Button">
+          Go Home
+        </v-btn>
+      </v-card-text>
+      <v-card-text class="d-flex justify-center align-center pa-5 text-caption">
+        <nuxt-img
+          format="webp"
+          src="images/error/401.jpg"
+          width="401px"
+          alt="404 Error"
+        ></nuxt-img>
+      </v-card-text>
+    </v-card>
+    <v-card v-show="error.statusCode === 500">
+      <v-card-title class="d-flex justify-center align-center mt-8">
+        Something went wrong</v-card-title
+      >
+      <v-card-text class="d-flex justify-center align-center mt-8">
+        <v-btn to="/" color="success" outlined aria-label="Go Home Button">
+          Go Home
+        </v-btn>
+      </v-card-text>
+      <v-card-text class="d-flex justify-center align-center pa-5 text-caption">
+        <nuxt-img
+          format="webp"
+          src="images/error/500.jpg"
+          width="401px"
+          alt="500 Error"
+        ></nuxt-img>
+      </v-card-text>
+    </v-card>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'EmptyLayout',
-  layout: 'empty',
+  name: 'ErrorLayout',
   props: {
     error: {
       type: Object,
       default: null,
+      require: false,
     },
-  },
-  data() {
-    return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred',
-    }
-  },
-  head() {
-    const title =
-      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
-    return {
-      title,
-    }
   },
 }
 </script>
-
-<style scoped>
-h1 {
-  font-size: 20px;
-}
-</style>

@@ -1,13 +1,18 @@
 <template>
   <v-container>
     <v-row>
-      <v-col> This is examples page </v-col>
+      <v-col> <HeroOne></HeroOne> </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-export default {}
+import HeroOne from '~/components/HeroComponents/HeroOne.vue'
+export default {
+  components: {
+    HeroOne,
+  },
+}
 </script>
 
 <style></style>

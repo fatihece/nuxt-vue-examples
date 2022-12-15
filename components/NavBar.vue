@@ -3,12 +3,14 @@
     <v-app-bar app>
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="drawer = true">
       </v-app-bar-nav-icon>
-      <v-toolbar-title>My Blog</v-toolbar-title>
+      <v-toolbar-title>
+        <nuxt-link to="/">fth blog</nuxt-link>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn text>Home</v-btn>
-      <v-btn text>About</v-btn>
-      <v-btn text>Examples</v-btn>
-      <v-btn text>Contact</v-btn>
+      <v-btn text to="/">Home</v-btn>
+      <v-btn text to="/about">About</v-btn>
+      <v-btn text to="/examples">Examples</v-btn>
+      <v-btn text to="/contact">Contact</v-btn>
       <v-spacer></v-spacer>
       <v-autocomplete
         v-model="model"
@@ -75,4 +77,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>

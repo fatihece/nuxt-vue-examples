@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row
       class="fill-height imgHover"
       align="center"
@@ -17,7 +17,7 @@
             <v-img :src="item.img" height="225px" cover> </v-img>
             <v-card-title>{{ item.title }}</v-card-title>
 
-            <v-card-subtitle> 15/12/2022</v-card-subtitle>
+            <v-card-subtitle> {{ formatDate(new Date()) }}</v-card-subtitle>
             <v-card-text>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem
               saepe sapiente deleniti, odio non laborum fuga.
@@ -70,6 +70,18 @@ export default {
       },
     ],
   }),
+  methods: {
+    formatDate(time) {
+      const date = new Date(time)
+
+      // Get year, month, and day part from the date
+      const year = date.toLocaleString('default', { year: 'numeric' })
+      const month = date.toLocaleString('default', { month: '2-digit' })
+      const day = date.toLocaleString('default', { day: '2-digit' })
+
+      return `${year}/${month}/${day}`
+    },
+  },
 }
 </script>
 

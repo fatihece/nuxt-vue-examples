@@ -11,6 +11,7 @@
       <v-btn text to="/about">About</v-btn>
       <v-btn text to="/examples">Examples</v-btn>
       <v-btn text to="/contact">Contact</v-btn>
+      <v-btn text to="/inspire" icon><v-icon>fa comment-text</v-icon></v-btn>
       <v-spacer></v-spacer>
       <v-autocomplete
         v-model="model"

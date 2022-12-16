@@ -6,19 +6,20 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer class="blue-grey white--text">
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <FooterSection></FooterSection>
   </v-app>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import FooterSection from '~/components/FooterSection.vue'
+
 import '~/assets/style.css'
 export default {
   name: 'DefaultLayout',
   components: {
     NavBar,
+    FooterSection,
   },
   data() {
     return {

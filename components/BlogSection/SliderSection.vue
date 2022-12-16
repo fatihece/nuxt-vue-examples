@@ -36,14 +36,14 @@ export default {
   data: () => ({
     model: null,
     slideItems: [
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
-      { image: 'images/i1.jpg' },
+      { image: 'images/slider/s1.jpg' },
+      { image: 'images/slider/s2.jpg' },
+      { image: 'images/slider/s3.jpg' },
+      { image: 'images/slider/s4.jpg' },
+      { image: 'images/slider/s5.jpg' },
+      { image: 'images/slider/s6.jpg' },
+      { image: 'images/slider/s7.jpg' },
+      { image: 'images/slider/s8.jpg' },
     ],
   }),
 }

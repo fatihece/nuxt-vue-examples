@@ -6,7 +6,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer app class="#f5f5f5">
+    <v-footer class="blue-grey white--text">
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -14,6 +14,7 @@
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import '~/assets/style.css'
 export default {
   name: 'DefaultLayout',
   components: {

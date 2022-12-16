@@ -6,4 +6,5 @@ export const filters = [
   { title: 'Inner Zoom ', link: '/inner-zoom' },
   { title: 'Text Hover Examples', link: '/text-hover' },
   { title: 'Parallax Examples', link: '/parallax' },
+  { title: 'Testimonials Examples', link: '/testimonials' },
 ]

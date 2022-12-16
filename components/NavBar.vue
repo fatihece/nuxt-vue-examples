@@ -1,17 +1,19 @@
 <template>
   <div>
-    <v-app-bar app>
+    <v-app-bar app class="blue-grey white--text">
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="drawer = true">
       </v-app-bar-nav-icon>
       <v-toolbar-title>
         <nuxt-link to="/">fth blog</nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn text to="/">Home</v-btn>
-      <v-btn text to="/about">About</v-btn>
-      <v-btn text to="/examples">Examples</v-btn>
-      <v-btn text to="/contact">Contact</v-btn>
-      <v-btn text to="/inspire" icon><v-icon>fa comment-text</v-icon></v-btn>
+      <v-btn text to="/" class="white--text">Home</v-btn>
+      <v-btn text to="/about" class="white--text">About</v-btn>
+      <v-btn text to="/examples" class="white--text">Examples</v-btn>
+      <v-btn text to="/contact" class="white--text">Contact</v-btn>
+      <v-btn text to="/inspire" icon
+        ><v-icon color="white">fa-comment-code</v-icon></v-btn
+      >
       <v-spacer></v-spacer>
       <v-autocomplete
         v-model="model"
@@ -20,7 +22,7 @@
         item-text="title"
         no-filter
         label="Search any component..."
-        class="elevation-0 rounded mt-5"
+        class="elevation-0 rounded mt-5 white--text"
         :style="'max-width:360px'"
         outlined
         dense
@@ -28,6 +30,7 @@
         :items="filters"
         :search-input.sync="search"
         return-object
+        background-color="white "
       >
         <template #prepend-inner>
           <div
@@ -68,10 +71,10 @@ export default {
   }),
   watch: {
     search(val) {
-      console.log(val)
+      // console.log(val)
     },
     model(val) {
-      console.log('model', val)
+      // console.log('model', val)
       this.$router.push(val.link)
     },
   },

@@ -1,14 +1,11 @@
 <template>
   <v-container>
-    <v-row>
+    <BackgroundOne></BackgroundOne>
+    <BackgroundTwo></BackgroundTwo>
+    <BackgroundThree></BackgroundThree>
+    <div class="mt-16">
       <HeroOne></HeroOne>
-    </v-row>
-    <v-row style="height: 100%" class="mt-16">
-      <BackgroundOne></BackgroundOne>
-    </v-row>
-    <v-container fluid class="pa-0 mt-16">
-      <BackgroundTwo></BackgroundTwo>
-    </v-container>
+    </div>
   </v-container>
 </template>
 
@@ -16,11 +13,13 @@
 import HeroOne from '~/components/HeroComponents/HeroOne.vue'
 import BackgroundOne from '~/components/BackgroundSections/BackgroundOne.vue'
 import BackgroundTwo from '~/components/BackgroundSections/BackgroundTwo.vue'
+import BackgroundThree from '~/components/BackgroundSections/BackgroundThree.vue'
 export default {
   components: {
     HeroOne,
     BackgroundOne,
     BackgroundTwo,
+    BackgroundThree,
   },
 }
 </script>

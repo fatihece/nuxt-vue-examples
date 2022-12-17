@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar app class="blue-grey white--text">
+    <v-app-bar app class="blue-grey white--text" style="z-index: 9999">
       <v-app-bar-nav-icon class="d-flex d-sm-none" @click="drawer = true">
       </v-app-bar-nav-icon>
       <v-toolbar-title>

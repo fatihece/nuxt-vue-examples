@@ -2,7 +2,11 @@
   <v-container>
     <v-row>
       <div class="background">
-        <h1>The browser renders this text on top of the background image!</h1>
+        <div class="d-flex justify-center align-center">
+          <h1 class="text-center">
+            The browser renders this text on top of the background image!
+          </h1>
+        </div>
       </div>
     </v-row>
   </v-container>

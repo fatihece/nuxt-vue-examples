@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid style="margin-top: -50px">
+  <v-container fluid>
     <div class="head">
       <v-row>
         <v-col cols="5">
@@ -32,7 +32,7 @@
         </v-col>
         <v-col cols="5">
           <div
-            style="position: relative; z-index: 9999"
+            style="position: relative; z-index: 9"
             class="mt-16 d-flex justify-center align-center"
           >
             <v-img

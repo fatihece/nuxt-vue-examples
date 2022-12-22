@@ -43,7 +43,7 @@
                     text-align: center;
                   "
                   class="orange darken-2"
-                  >Rated by hundreds of NJ clients</span
+                  >Rated by hundreds of our clients</span
                 >
                 <img
                   src="images/landing1/five-stars.png"
@@ -64,27 +64,24 @@
                   font-size: 42px;
                 "
               >
-                NJ’s #1 Custom Closet Designer
+                Lorem #1 Ipsun Gonzale TExtarea
               </h1>
             </div>
             <div class="pa-5 pa-md-0">
               <h2 class="white--text font-weight-500 para-desc" style="">
-                Elevate your home with top tier functionality, organization, and
-                style
+                It has survived not only five centuries,
               </h2>
             </div>
 
             <ul class="hero_bullets">
+              <li class="white--text font-weight-bold">Why do we use it?</li>
+
               <li class="white--text font-weight-bold">
-                Organize and Glamorize your Home with Ease
+                Where does it come from?
               </li>
 
               <li class="white--text font-weight-bold">
-                Head to Toe Client Customization
-              </li>
-
-              <li class="white--text font-weight-bold">
-                Innovative designs that will transform your day to day
+                Where can I get some?
               </li>
 
               <li class="white--text font-weight-bold">Lifetime Warranty</li>

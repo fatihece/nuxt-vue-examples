@@ -1,8 +1,8 @@
 <template>
   <v-container>
     <v-row>
-      <div class="background">
-        <div class="d-flex justify-center align-center">
+      <div class="d-flex justify-center align-center background">
+        <div class="">
           <h1 class="text-center">
             The browser renders this text on top of the background image!
           </h1>

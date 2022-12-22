@@ -3,6 +3,7 @@
     <StoryOne></StoryOne>
     <StoryTwo></StoryTwo>
     <StoryThree></StoryThree>
+    <StoryFour></StoryFour>
   </v-container>
 </template>
 
@@ -10,11 +11,13 @@
 import StoryOne from '~/components/Testimonials/StoryOne.vue'
 import StoryTwo from '~/components/Testimonials/StoryTwo.vue'
 import StoryThree from '~/components/Testimonials/StoryThree.vue'
+import StoryFour from '~/components/Testimonials/StoryFour.vue'
 export default {
   components: {
     StoryOne,
     StoryTwo,
     StoryThree,
+    StoryFour,
   },
 }
 </script>

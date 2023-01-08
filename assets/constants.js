@@ -8,3 +8,14 @@ export const filters = [
   { title: 'Parallax Examples', link: '/parallax' },
   { title: 'Testimonials Examples', link: '/testimonials' },
 ]
+
+export const socialMediaLinks = {
+  facebook: 'https://www.facebook.com',
+  instagram: 'https://www.instagram.com',
+  pinterest: 'https://www.pinterest.com',
+  tiktok: 'https://www.tiktok.com',
+  youtube: '',
+  twitter: 'https://twitter.com/',
+  linkedin: 'https://www.linkedin.com/in/fatihyurek/',
+  github: 'https://github.com/fatihece',
+}

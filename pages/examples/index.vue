@@ -1,29 +1,36 @@
 <template>
-  <v-container fluid pa-0 ma-0>
-    <v-row
-      ><v-col class="pa-0">
-        <section class="orange-banner">
-          <v-container fluid pa-0 ma-0>
-            <v-row justify="center">
-              <v-col md="8" class="">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                  voluptatum.
-                </p>
-                <p class="font-italic" style="font-size: 24px">
-                  Expires {{ expireDate }}
-                </p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </section>
-      </v-col></v-row
-    >
-  </v-container>
+  <div>
+    <position-background></position-background>
+    <!-- <v-container fluid pa-0 ma-0>
+      <v-row
+        ><v-col class="pa-0">
+          <section class="orange-banner">
+            <v-container fluid pa-0 ma-0>
+              <v-row justify="center">
+                <v-col md="8" class="">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, voluptatum.
+                  </p>
+                  <p class="font-italic" style="font-size: 24px">
+                    Expires {{ expireDate }}
+                  </p>
+                </v-col>
+              </v-row>
+            </v-container>
+          </section>
+        </v-col></v-row
+      >
+    </v-container> -->
+  </div>
 </template>
 
 <script>
+import PositionBackground from '~/components/BackgroundSections/PositionBackground.vue'
 export default {
+  components: {
+    PositionBackground,
+  },
   data: () => ({}),
   computed: {
     expireDate() {

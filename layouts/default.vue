@@ -6,6 +6,7 @@
         <Nuxt />
       </v-container>
     </v-main>
+    <NewsletterSignup></NewsletterSignup>
     <FooterSection></FooterSection>
   </v-app>
 </template>
@@ -13,6 +14,7 @@
 <script>
 import NavBar from '~/components/NavBar.vue'
 import FooterSection from '~/components/FooterSection.vue'
+import NewsletterSignup from '~/components/NewsletterSignup/NewsletterSignup.vue'
 
 import '~/assets/style.css'
 export default {
@@ -20,6 +22,7 @@ export default {
   components: {
     NavBar,
     FooterSection,
+    NewsletterSignup,
   },
   data() {
     return {

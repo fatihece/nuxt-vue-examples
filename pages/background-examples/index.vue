@@ -7,6 +7,7 @@
     <div class="mt-16">
       <HeroOne></HeroOne>
     </div>
+    <BannerItems></BannerItems>
   </v-container>
 </template>
 
@@ -16,6 +17,7 @@ import BackgroundOne from '~/components/BackgroundSections/BackgroundOne.vue'
 import BackgroundTwo from '~/components/BackgroundSections/BackgroundTwo.vue'
 import BackgroundThree from '~/components/BackgroundSections/BackgroundThree.vue'
 import BackgroundFour from '~/components/BackgroundSections/BackgroundFour.vue'
+import BannerItems from '~/components/BlogSection/BannerItems.vue'
 export default {
   components: {
     HeroOne,
@@ -23,6 +25,7 @@ export default {
     BackgroundTwo,
     BackgroundThree,
     BackgroundFour,
+    BannerItems,
   },
 }
 </script>

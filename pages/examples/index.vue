@@ -1,6 +1,7 @@
 <template>
   <div>
     <position-background></position-background>
+    <companies-section></companies-section>
     <!-- <v-container fluid pa-0 ma-0>
       <v-row
         ><v-col class="pa-0">
@@ -27,9 +28,11 @@
 
 <script>
 import PositionBackground from '~/components/BackgroundSections/PositionBackground.vue'
+import CompaniesSection from '~/components/CompaniesSection/CompaniesSection.vue'
 export default {
   components: {
     PositionBackground,
+    CompaniesSection,
   },
   data: () => ({}),
   computed: {

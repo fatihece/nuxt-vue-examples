@@ -1,3 +1,26 @@
 .deneme {
   background-color: red;
 }
+
+:root {
+  /* Colors */
+  --primary: #4a72ff;
+  --primary-light: rgba(74, 114, 255, 0.05);
+  --dark: #0c1b4d;
+  --dark-light: rgba(12, 27, 77, 0.6);
+  --dark-extra-light: rgba(12, 27, 77, 0.1);
+  --spacing: #ffd39f;
+  --white: #f4f7ff;
+
+  /* Shadow */
+  --primary-shadow: 0 5px 15px 15px rgba(74, 114, 255, 0.1);
+
+  /* Font Sizes */
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 28px;
+  --font-size-xxxl: 34px;
+}

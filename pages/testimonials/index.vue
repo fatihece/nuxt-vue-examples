@@ -4,6 +4,7 @@
     <StoryTwo></StoryTwo>
     <StoryThree></StoryThree>
     <StoryFour></StoryFour>
+    <StoryWithGrid></StoryWithGrid>
   </v-container>
 </template>
 
@@ -12,12 +13,14 @@ import StoryOne from '~/components/Testimonials/StoryOne.vue'
 import StoryTwo from '~/components/Testimonials/StoryTwo.vue'
 import StoryThree from '~/components/Testimonials/StoryThree.vue'
 import StoryFour from '~/components/Testimonials/StoryFour.vue'
+import StoryWithGrid from '~/components/Testimonials/StoryWithGrid.vue'
 export default {
   components: {
     StoryOne,
     StoryTwo,
     StoryThree,
     StoryFour,
+    StoryWithGrid,
   },
 }
 </script>

@@ -9121,6 +9121,11 @@
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
 
+"v-mask@^2.3.0":
+  "integrity" "sha512-ap7pTtCTvj25CqX4VYXqudCBd0+XvYyhiiLbzWQQR7AMQosJ2+DPu0a94P9stk0EGmGcmYxJaPkFkfjD8hquWQ=="
+  "resolved" "https://registry.npmjs.org/v-mask/-/v-mask-2.3.0.tgz"
+  "version" "2.3.0"
+
 "validate-npm-package-license@^3.0.1":
   "integrity" "sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew=="
   "resolved" "https://registry.npmjs.org/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz"

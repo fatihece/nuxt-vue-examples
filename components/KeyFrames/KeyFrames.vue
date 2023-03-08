@@ -1,5 +1,5 @@
 <template>
-  <v-container style="height: 100vh">
+  <v-container>
     <v-row align="center" justify="center">
       <v-col cols="12">
         <form class="ui-form">
@@ -27,19 +27,20 @@ export default {}
   --color-blue: #1c38f1;
   --color-green: #1fcdb0;
   --input-height: 3rem;
-  --transition-duration: 0.3s;
+  //   0.3s: 0.3s;
   --transition-easing: cubic-bezier(0.5, 0, 0.5, 1);
   --animation-duration: 0.8s;
 }
-body {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f9fbff;
+  height: 100vh;
 }
 
 .ui-form {
-  background: #a9bfd6;
+  background: #fff;
   box-shadow: 0 0.5rem 1rem #0003;
   padding: 1rem;
   border-radius: 0.25rem;
@@ -48,43 +49,48 @@ body {
   grid-template-rows: 1fr;
   grid-column-gap: 1rem;
   grid-template-areas: 'input button';
-  transition: all var(--transition-duration) var(--transition-easing);
+  transition: all 0.3s cubic-bezier(0.5, 0, 0.5, 1);
   will-change: transform;
 
-  --color: var(--color-gray);
+  color: #8c97b7;
   &:focus-within {
-    --color: var(--color-blue);
+    color: #1c38f1;
   }
 
-  animation: slide-up var(--animation-duration) var(--transition-easing);
+  animation: slide-up 0.3s cubic-bezier(0.5, 0, 0.5, 1);
 
-  > .ui-input,
-  > .ui-button {
-    animation-name: slide-up;
+  .ui-input,
+  .ui-button {
+    animation-name: shake;
     animation-fill-mode: both;
-    animation-timing-function: var(--transition-easing);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    animation-delay: 1s;
   }
 }
 
 .ui-input {
   grid-area: input;
   padding: 0 1rem;
-  height: var(--input-height);
-  border: 2px solid var(--color);
+  height: 3rem;
+  border: 2px solid #1c38f1;
   border-radius: 0.25rem;
   outline: none;
   transition: inherit;
+
+  &:invalid:not(:focus) {
+    animation: shake 1s;
+  }
 }
 
 .ui-button {
   grid-area: button;
   border: none;
   padding: 0 1rem;
-  color: #000;
+  color: white;
   font-weight: bold;
   border-radius: 0.25rem;
-  height: var(--input-height);
-  background-color: var(--color);
+  height: 3rem;
+  background-color: #1c38f1;
   transition: inherit;
 }
 
